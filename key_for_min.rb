@@ -7,7 +7,7 @@ def key_for_min_value(name_hash)
     return nil
   end
   
-  min_val = 
+  min_val = RbConfig::LIMITS['INT32_MAX']
   min_key = ""
   name_hash.each do |k, v|
     if min_val > v
